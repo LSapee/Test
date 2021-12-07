@@ -3,7 +3,7 @@ package com.sapee.springboot.web;
 
 
 import com.sapee.springboot.service.posts.PostsService;
-import com.sapee.springboot.domain.post.PostsSaveRequestDto;
+import com.sapee.springboot.web.dto.PostsSaveRequestDto;
 import com.sapee.springboot.web.dto.PostsResponseDto;
 import com.sapee.springboot.web.dto.PostsUpdateRequestDto;
 import lombok.RequiredArgsConstructor;

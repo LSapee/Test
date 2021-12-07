@@ -3,7 +3,7 @@ package com.sapee.springboot.service.posts;
 
 import com.sapee.springboot.domain.post.Posts;
 import com.sapee.springboot.domain.post.PostsRepository;
-import com.sapee.springboot.domain.post.PostsSaveRequestDto;
+import com.sapee.springboot.web.dto.PostsSaveRequestDto;
 import com.sapee.springboot.web.dto.PostsResponseDto;
 import com.sapee.springboot.web.dto.PostsUpdateRequestDto;
 import lombok.RequiredArgsConstructor;
@@ -30,11 +30,13 @@ public class PostsService {
         return id;
     }
 
+    @Transactional(readOnly = true)
     public PostsResponseDto findById(Long id){
-        Posts entity = postsRepository.findById(id).orElseThrow(()->
+        Posts entity = postsRepository.findById(id)
+                .orElseThrow(()->
                 new IllegalArgumentException("해당 게시글은 없습니다. id =" + id));
 
-        return  new PostsResponseDto(entity);
+        return new PostsResponseDto(entity);
     }
 
 }

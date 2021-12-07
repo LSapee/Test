@@ -1,6 +1,7 @@
-package com.sapee.springboot.domain.post;
+package com.sapee.springboot.web.dto;
 
 
+import com.sapee.springboot.domain.post.Posts;
 import lombok.Builder;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
