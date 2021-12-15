@@ -35,6 +35,14 @@ public class OAuthAttributes {
         return ofGoogle(userNameAttributeName, attributes);
     }
 
+    public User toEntity(){
+        return User.builder()
+                .name(name)
+                .email(email)
+                .picture(picture)
+                .role(Role.GUEST)
+                .build();
+    }
 
 
     private static OAuthAttributes ofGoogle(String userNameAttributeName, Map<String, Object> attributes){
@@ -60,13 +68,6 @@ public class OAuthAttributes {
                 .build();
     }
 
-    public User toEntity(){
-        return User.builder()
-                .name(name)
-                .email(email)
-                .picture(picture)
-                .role(Role.GUEST)
-                .build();
-    }
+
 
 }
