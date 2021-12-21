@@ -8,5 +8,5 @@ public class Application {
     public static void main(String[] args){
         SpringApplication.run(Application.class, args);
     }
-//    EC2 세팅중 설정중
+//    RDS 연결중 오류 발생하여 해결중
 }
