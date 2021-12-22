@@ -1,7 +1,7 @@
 package com.sapee.springboot.web;
 
 
-import org.apache.catalina.security.SecurityConfig;
+import com.sapee.springboot.config.auth.SecurityConfig;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.extension.ExtendWith;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -19,7 +19,9 @@ import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.
 
 @WebAppConfiguration
 @ExtendWith(SpringExtension.class)
-
+@WebMvcTest(controllers = HelloController.class,excludeFilters = {
+        @ComponentScan.Filter(type = FilterType.ASSIGNABLE_TYPE, classes = SecurityConfig.class)
+})
 public class HelloControllerTest {
 
     @Autowired
