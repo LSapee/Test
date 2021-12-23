@@ -1,10 +1,8 @@
 # Test
 
-네이버 로그인시 localhost:8080/login으로 가지는 에러 -> application.properties 변경으로 해결
+네이버 로그인시 localhost:8080/login으로 가지는 에러 -> application.properties 변경으로 해결 (오타였던 것)
 
-collation_server utf8mb4 설정 오류 -> character_set_server 을 utf8mb4로 설정 해주기
-
-
+collation_server utf8mb4 설정 오류 -> character_set_server 을 utf8mb4로 설정 해주기 
 
 5장
 오류내용
