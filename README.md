@@ -30,6 +30,7 @@ Invalid or corrupt jarfile /home/ec2-user/app/step1/
 원인 depoly.sh 오타 
 
 EC2 및 RDS 연결 오류
+
 2021-12-23 16:02:42.663 ERROR 1869 --- [main] o.s.b.web.embedded.tomcat.TomcatStarter  : Error starting Tomcat context. Exception: org.springframework.beans.facto
 mcatStarter  : Error starting Tomcat context. Exception: org.springframework.beans.faositoryFilterRegistration' defined in class path resource [org/springframework/boot/auto
 ctory.UnsatisfiedDependencyException. Message: Error creating bean with name 'session expressed through method 'sessionRepositoryFilterRegistration' parameter 1; nested exce
