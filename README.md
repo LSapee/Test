@@ -28,6 +28,9 @@ Invalid or corrupt jarfile /home/ec2-user/app/step1/
 
 해결 
 원인 depoly.sh 오타 
+책 
+echo "> 새 애플리케이션 배포" JAR_NAME=$(ls -tr $REPOSITORY/ | grep jar | tail -n 1)
+
 
 EC2 및 RDS 연결 오류
 deploy.sh의 오타 해결
