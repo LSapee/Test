@@ -35,6 +35,6 @@ echo "> 새 애플리케이션 배포" JAR_NAME=$(ls -tr $REPOSITORY/ | grep jar
 EC2 및 RDS 연결 오류
 deploy.sh의 오타 해결
 
-이번에는 jar 파일을 찾을 수 없다는 오류메시지 나오기 시작함
+311페이지 CURL 오류나는 것 해결하는중.
 
 
